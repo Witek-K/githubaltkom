@@ -17,5 +17,13 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        
+        stage('Scripting') {
+            steps {
+                script {
+                    if (2 + 2 != 4) {
+                        println "jeeej!"}
+                    else {println"uuu..." }
+                }
     }
 }
