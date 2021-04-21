@@ -22,8 +22,11 @@ pipeline {
             steps {
                 script {
                     if (2 + 2 != 4) {
-                        println "jeeej!"}
-                    else {println"uuu..." }
+                        println ("jeeej!")
+                    }
+                    else {
+                        println ("uuu...")
+                    }
                 }
     }
 }
